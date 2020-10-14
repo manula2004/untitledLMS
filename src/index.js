@@ -14,6 +14,7 @@ import 'firebase/firestore';
 import firebase from './config/FirebaseConfig' 
 import { useSelector  } from 'react-redux'
 import { isLoaded  } from 'react-redux-firebase';
+import Loading from './components/layout/Loading'
 
 const rrfConfig = { 
   userProfile: 'users',
@@ -41,7 +42,7 @@ const store = createStore(rootReducer,
 
   function AuthIsLoaded({ children }) {
     const auth = useSelector(state => state.firebase.auth)
-    if (!isLoaded(auth)) return <div className='center'>Loading........</div>;
+    if (!isLoaded(auth)) return <div ><Loading /></div>;
         return children
 }
 
