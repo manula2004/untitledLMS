@@ -24,27 +24,27 @@ export class NavBar extends Component {
                     <div className='material-icons nav-icon' onClick={this.props.signOut}>login</div>
                 </div>
                 <span className='nav-topic'>Tabs</span>
-                <NavLink  to='/' className='nav-link'>
+                <NavLink  exact to='/' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon'>home</div>
                <span className='nav-link-topic'>Dashboard</span>
                </NavLink>
-               <NavLink to='/events' className='nav-link'>
+               <NavLink to='/events' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon'>event</div>
                <span className='nav-link-topic'>Events</span>
                </NavLink>
-               <NavLink to='/chat' className='nav-link'>
+               <NavLink to='/chat' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon'>chat</div>
                <span className='nav-link-topic'>Public Chat</span>
                </NavLink>
-               <NavLink to='/forum' className='nav-link'>
+               <NavLink to='/forum' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon'>forum</div>
                <span className='nav-link-topic'>Forum</span>
                </NavLink>
-               <NavLink to='/resources' className='nav-link'>
+               <NavLink to='/resources' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon settings-icon'>book</div>
                <span className='nav-link-topic'>Resouces</span>
                </NavLink>
-               <NavLink to='/settings' className='nav-link'>
+               <NavLink to='/settings' className='nav-link' activeClassName="nav-link--active">
                <div className='material-icons nav-icon settings-icon'>settings</div>
                <span className='nav-link-topic'>Settings</span>
                </NavLink>

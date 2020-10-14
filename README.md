@@ -15,9 +15,16 @@ untitledLMS Learning Management System is an easy-to-use LMS designed for easy m
  - [ ] Document Sharing
  - [ ] Testing
  
- **Development**
- This Project is being developed as an REACT app: Please read the following to setup your Local Development Environment;
+ **Developer's Guide**
  
+ This Project is being developed as an REACT app: Please read the following to setup your Local Development Environment;
+
+First, fork this repository and then clone it.
+### `git clone https://github.com/[yourUSRname]/untitledLMS.git`
+Navigate to the root folder of the app.
+### `cd untitledLMS`
+To install all the dependencies you need, just run this command in the root directory : 
+### `npm install`
 In the project directory, you can run:
 ### `npm start`
 Runs the app in the development mode.<br  />

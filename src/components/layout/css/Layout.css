@@ -64,11 +64,17 @@
 
 .nav-link:hover{
     background-color: #00b074;
+    transform: translateY(-2px);
 }
 
 .nav-link:hover > .nav-icon{
     color: #fff !important;
 }
+
+.nav-link--active {
+    border-bottom: 3px solid #00b074;
+    transition: border-bottom .5s ease-in-out;
+  }
 
 .profile{
     margin-bottom: 10%;
