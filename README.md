@@ -16,6 +16,7 @@ untitledLMS Learning Management System is an easy-to-use LMS designed for easy m
  - [ ] Testing
  
  **Development**
+ 
  This Project is being developed as an REACT app: Please read the following to setup your Local Development Environment;
  
 In the project directory, you can run:
