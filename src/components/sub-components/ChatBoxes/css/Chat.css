@@ -20,7 +20,7 @@ textarea{
     padding: 1.25%;
     background-color: #212327;
     color: white;
-    width: 90%;
+    width: 85%;
     height: 75%;
     resize: none;
     border-radius: 50px;
@@ -37,12 +37,19 @@ textarea{
     color: #00b074;
     font-size: 1.5em;
     transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sendBtn:hover{
     transform: rotate(-45deg);
     background-color: #00b074;
     color: #212327;
+}
+
+.sendBtn:active{
+    background-color: #212327;
 }
 
 .chat{

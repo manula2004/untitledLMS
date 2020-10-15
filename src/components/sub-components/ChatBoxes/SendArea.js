@@ -18,12 +18,25 @@ const SendArea = (props) => {
         if(state.message!==''){
         props.sendMsg(state)
         document.getElementById("form").reset();
+        state = {
+            message: ''
+         }
         }
     }
+    const handleAddEmoticon = (e) => {
+        e.preventDefault();
+        let txtarea = document.getElementById('message')
+        txtarea.value += ' \u{1F600}'
+        state = {
+            message: txtarea.value
+         }
+    }
+
     return (
         <form className='send-area' id='form'>
             <textarea id='message' onChange={handleChange} placeholder='Type a message......'></textarea>
-            <button className='sendBtn material-icons' onClick={handleSubmit}>send</button>
+            <div className='sendBtn material-icons' onClick={handleAddEmoticon}>insert_emoticon</div>
+            <div className='sendBtn material-icons' onClick={handleSubmit}>send</div>
         </form>
     )
 }
